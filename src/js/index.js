@@ -20,14 +20,14 @@ function addTask() {
   updateCounters();
 }
 
-function createTaskElement(text, isCompleted) {
+function createTaskElement(text) {
   // タスクの表示されるclass名を作成
   const taskItem = document.createElement('div');
   taskItem.className = 'todo-item';
 
   // タスクの内容を表示
   const taskContent = document.createElement('div');
-  taskContent.innerHTML = `<input type="checkbox" ${isCompleted ? 'checked' : ''} onclick="updateCounters()"> <span>${text}</span>`;
+  taskContent.innerHTML = `<input type="checkbox" onclick="updateCounters()"> <span>${text}</span>`;
   // taskItemに追加
   taskItem.appendChild(taskContent);
 
