@@ -1,0 +1,28 @@
+.todo-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.todo-item:last-child {
+  border-bottom: none;
+}
+
+.task-actions button {
+  margin-left: 5px;
+}
+
+.task-counter {
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.task-list {
+  margin-top: 20px;
+}
+
+.todo-item input[type="checkbox"]:checked + span {
+  text-decoration: line-through;
+}

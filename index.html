@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDoアプリ</title>
+    <!-- BootstrapのCSSをインクルード -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="src/css/styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1 class="mt-5">ToDoアプリ</h1>
+
+    <!-- 入力フィールドと保存ボタン -->
+    <div class="input-group mt-3">
+      <input type="text" id="new-task" class="form-control" placeholder="タスクを入力してください">
+      <div class="input-group-append">
+          <button class="btn btn-primary" id="add-task-btn" type="button" onclick="addTask()">保存</button>
+      </div>
+    </div>
+
+    <!-- タスクのカウンター -->
+    <div class="task-counter mt-3">
+      全てのタスク: <span id="total-count">0</span> | 完了済み: <span id="completed-count">0</span> | 未完了: <span id="pending-count">0</span>
+    </div>
+
+    <!-- ToDo一覧 -->
+    <div class="task-list mt-3" id="task-list">
+    </div>
+  </div>
+
+    <script src="src/js/index.js"></script>
+</body>
+
+</html>
